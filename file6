@@ -1,0 +1,17 @@
+#!/bin/bash
+
+logfile=$HOME/t16test
+touch $logfile
+now=`date +%Y%m%d-%H%M`
+
+
+chmod u-r $logfile
+
+if [ -r $logfile ]
+then
+	echo "The program ran at : $now" > $logfile
+	echo "The first attempt succeeded"
+else
+	echo "The first attempt failed"
+fi
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+case $USER in
+xhan)
+	echo "Welcome, $USER"
+	echo "Please enjoy your visit";;
+root)
+	echo "root";;
+*)
+	echo "other";;
+esac
